@@ -1,5 +1,6 @@
 const form = document.getElementById('data')
 const commentsWrapper = document.getElementById('comment-wrapper')
+const editBtn = document.getElementById('editBtn')
 let pickedComment = null
 
 const name = form.querySelector('[name="name"]'),
@@ -15,9 +16,13 @@ render(commentList)
 
 form.addEventListener('submit', retrieveFormValue)
 
-commentsWrapper.addEventListener('click', function (eventObject){
-  let commentElement = findElementInParents(eventObject.target, 'comment-item')
-  pickComment(+commentElement.dataset.id)
+commentsWrapper.addEventListener('click', insertDataInInputs)
+
+editBtn.addEventListener('click', function () {
+  pickedComment.name = name.value;
+  pickedComment.email = email.value;
+  pickedComment.message = text.value;
+  render(commentList)
 })
 
 
@@ -40,6 +45,11 @@ commentsWrapper.addEventListener('click', function (eventObject){
 
  */
 
+function insertDataInInputs(eventObject) {
+  let commentElement = findElementInParents(eventObject.target, 'comment-item')
+  pickComment(+commentElement.dataset.id)
+}
+
 function findElementInParents(currentElement, stopClass) {
   let stopper = 0
   while (!currentElement.classList.contains(stopClass)) {
@@ -61,11 +71,11 @@ function pickComment(commentId) {
 
 function addComment(newComment) {
   commentList.push(newComment)
-  commentsWrapper.innerHTML = ''
   render(commentList)
 }
 
 function render(model) {
+  commentsWrapper.innerHTML = ''
   model.forEach(function (comment){
     commentsWrapper.insertAdjacentHTML('beforeend', getTemplate(comment))
   })
