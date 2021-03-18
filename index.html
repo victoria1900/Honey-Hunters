@@ -12,6 +12,7 @@
     </script>
     <title>Honey Hunters</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preload" href="fonts/FontAwesome.woff2" as="font">
     <link rel="preload" href="fonts/roboto.woff2" as="font">
     <link rel="preload" href="fonts/robotobold.woff2" as="font">
@@ -28,7 +29,7 @@
 
     <main>
         <section class="section container">
-            <form class="section-form" action="index.html" method="post" id="data">
+            <form class="section-form" id="data">
                 <div class="section-page">
                     <div class="section-wraper">
                         <div class="section-block">
@@ -59,54 +60,57 @@
                     <p class="wraper-subtitle">Выводим комментарии</p>
 
                 </div>
-                <div class="wraper-description">
-                    <div class="wraper-description__first" id="output">
-
-                        <div class="wraper-description__div">
-                            <p class="wraper-description__div-subtitle">Вася</p>
-                        </div>
-                        <div class="wraper-description__item">
-                            <p class="wraper-description__item-email">vasya@mail.ru</p>
-                            <p class="wraper-description__item-message">Сообщение от Василия Пупкина.</p>
-                        </div>
-                    </div>
-                    <div class="wraper-description__second">
-                        <div class="wraper-description__div-second">
-                            <p class="wraper-description__div-second-subtitle">Маруся</p>
-                        </div>
-                        <div class="wraper-description__item-second">
-                            <p class="wraper-description__item-second-email">marysia@mail.ru</p>
-                            <p class="wraper-description__item-second-message">Всем привет, я Маруся</p>
-                        </div>
-                    </div>
-                    <div class="wraper-description__third">
-                        <div class="wraper-description__div-third">
-                            <p class="wraper-description__div-third-subtitle">Вася</p>
-                        </div>
-                        <div class="wraper-description__item-third">
-                            <p class="wraper-description__item-third-email">vasya@mail.ru</p>
-                            <p class="wraper-description__item-third-message">Сообщение от Василия Пупкина.</p>
-                        </div>
-                    </div>
-                    <div class="wraper-description__fourth">
-                        <div class="wraper-description__div-fourth">
-                            <p class="wraper-description__div-fourth-subtitle">Маруся</p>
-                        </div>
-                        <div class="wraper-description__item-fourth">
-                            <p class="wraper-description__item-fourth-email">marysia@mail.ru</p>
-                            <p class="wraper-description__item-fourth-message">Всем привет, я Маруся</p>
-                        </div>
-                    </div>
-                    <div class="wraper-description__fifth">
-                        <div class="wraper-description__div-fifth">
-                            <p class="wraper-description__div-fifth-subtitle">Вася</p>
-                        </div>
-                        <div class="wraper-description__item-fifth">
-                            <p class="wraper-description__item-fifth-email">vasya@mail.ru</p>
-                            <p class="wraper-description__item-fifth-message">Сообщение от Василия Пупкина.</p>
-                        </div>
-                    </div>
+                <div class="comment-wrapper" id="comment-wrapper">
+<!--                    Здесь будут все комменты-->
                 </div>
+<!--                <div class="wraper-description">-->
+<!--                    <div class="wraper-description__first" id="output">-->
+
+<!--                        <div class="wraper-description__div">-->
+<!--                            <p class="wraper-description__div-subtitle">Вася</p>-->
+<!--                        </div>-->
+<!--                        <div class="wraper-description__item">-->
+<!--                            <p class="wraper-description__item-email">vasya@mail.ru</p>-->
+<!--                            <p class="wraper-description__item-message">Сообщение от Василия Пупкина.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="wraper-description__second">-->
+<!--                        <div class="wraper-description__div-second">-->
+<!--                            <p class="wraper-description__div-second-subtitle">Маруся</p>-->
+<!--                        </div>-->
+<!--                        <div class="wraper-description__item-second">-->
+<!--                            <p class="wraper-description__item-second-email">marysia@mail.ru</p>-->
+<!--                            <p class="wraper-description__item-second-message">Всем привет, я Маруся</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="wraper-description__third">-->
+<!--                        <div class="wraper-description__div-third">-->
+<!--                            <p class="wraper-description__div-third-subtitle">Вася</p>-->
+<!--                        </div>-->
+<!--                        <div class="wraper-description__item-third">-->
+<!--                            <p class="wraper-description__item-third-email">vasya@mail.ru</p>-->
+<!--                            <p class="wraper-description__item-third-message">Сообщение от Василия Пупкина.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="wraper-description__fourth">-->
+<!--                        <div class="wraper-description__div-fourth">-->
+<!--                            <p class="wraper-description__div-fourth-subtitle">Маруся</p>-->
+<!--                        </div>-->
+<!--                        <div class="wraper-description__item-fourth">-->
+<!--                            <p class="wraper-description__item-fourth-email">marysia@mail.ru</p>-->
+<!--                            <p class="wraper-description__item-fourth-message">Всем привет, я Маруся</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="wraper-description__fifth">-->
+<!--                        <div class="wraper-description__div-fifth">-->
+<!--                            <p class="wraper-description__div-fifth-subtitle">Вася</p>-->
+<!--                        </div>-->
+<!--                        <div class="wraper-description__item-fifth">-->
+<!--                            <p class="wraper-description__item-fifth-email">vasya@mail.ru</p>-->
+<!--                            <p class="wraper-description__item-fifth-message">Сообщение от Василия Пупкина.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
 
 
