@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <title>Honey Hunters</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/FontAwesome.woff2" as="font">
+    <link rel="preload" href="fonts/roboto.woff2" as="font">
+    <link rel="preload" href="fonts/robotobold.woff2" as="font">
+    <link rel="preload" href="fonts/robotomedium.woff2" as="font">
+</head>
+
+<body>
+    <header class="header container">
+        <div class="header-wraper">
+            <a class="header-link" href="#">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container">
+            <form class="section-form" action="index.html" method="post" id="data">
+                <div class="section-page">
+                    <div class="section-wraper">
+                        <div class="section-block">
+                            <label for="exampleFormControlInput1" class="section-block__label form-label">Имя</label>
+                            <input type="text" name="name" class="section-block__input form-control" required
+                                id="exampleFormControlInput1" placeholder="Вася">
+                        </div>
+                        <div class="section-block-first">
+                            <label for="exampleFormControlInput2"
+                                class="section-block-first__label form-label">E-Mail</label>
+                            <input type="email" name="email" class="section-block-first__input form-control" required
+                                id="exampleFormControlInput2">
+                        </div>
+                    </div>
+                    <div class="section-block-second">
+                        <label for="exampleFormControlTextarea1"
+                            class="section-block-second__label form-label">Комментарий</label>
+                        <textarea class="section-block-second__input form-control" name="text" required
+                            id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+                <button class="section-form__button btn btn-primary" type="submit" id="button">Записать</button>
+            </form>
+        </section>
+        <section class="wraper">
+            <div class="wraper-blocks container">
+                <div class="wraper-element">
+                    <p class="wraper-subtitle">Выводим комментарии</p>
+
+                </div>
+                <div class="wraper-description">
+                    <div class="wraper-description__first" id="output">
+
+                        <div class="wraper-description__div">
+                            <p class="wraper-description__div-subtitle">Вася</p>
+                        </div>
+                        <div class="wraper-description__item">
+                            <p class="wraper-description__item-email">vasya@mail.ru</p>
+                            <p class="wraper-description__item-message">Сообщение от Василия Пупкина.</p>
+                        </div>
+                    </div>
+                    <div class="wraper-description__second">
+                        <div class="wraper-description__div-second">
+                            <p class="wraper-description__div-second-subtitle">Маруся</p>
+                        </div>
+                        <div class="wraper-description__item-second">
+                            <p class="wraper-description__item-second-email">marysia@mail.ru</p>
+                            <p class="wraper-description__item-second-message">Всем привет, я Маруся</p>
+                        </div>
+                    </div>
+                    <div class="wraper-description__third">
+                        <div class="wraper-description__div-third">
+                            <p class="wraper-description__div-third-subtitle">Вася</p>
+                        </div>
+                        <div class="wraper-description__item-third">
+                            <p class="wraper-description__item-third-email">vasya@mail.ru</p>
+                            <p class="wraper-description__item-third-message">Сообщение от Василия Пупкина.</p>
+                        </div>
+                    </div>
+                    <div class="wraper-description__fourth">
+                        <div class="wraper-description__div-fourth">
+                            <p class="wraper-description__div-fourth-subtitle">Маруся</p>
+                        </div>
+                        <div class="wraper-description__item-fourth">
+                            <p class="wraper-description__item-fourth-email">marysia@mail.ru</p>
+                            <p class="wraper-description__item-fourth-message">Всем привет, я Маруся</p>
+                        </div>
+                    </div>
+                    <div class="wraper-description__fifth">
+                        <div class="wraper-description__div-fifth">
+                            <p class="wraper-description__div-fifth-subtitle">Вася</p>
+                        </div>
+                        <div class="wraper-description__item-fifth">
+                            <p class="wraper-description__item-fifth-email">vasya@mail.ru</p>
+                            <p class="wraper-description__item-fifth-message">Сообщение от Василия Пупкина.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer class="footer container">
+        <div class="footer-wraper">
+            <div class="footer-logo">
+                <a class="footer-link" href="#"></a>
+            </div>
+            <div class="footer-socials">
+                <a class="footer-vk" href="#"></a>
+                <a class="footer-fb" href="#"></a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
